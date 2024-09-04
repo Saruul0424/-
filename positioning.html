@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+#box1{
+    width:300px;
+    height: 300px;
+    background-color: blueviolet;
+    position:absolute ;
+    left:100px;
+    top:100px;
+}
+
+#box2{
+    width:300px;
+    height: 300px;
+    background-color: rgb(209, 76, 180);
+    position: relative;
+    left:100px;
+    top:100px;
+}
+div.fixed{
+    width: 300px;
+    bottom:0;
+    right: 0;
+    position:fixed;
+    background-color: lightgreen;
+}
+
+div.sticky{
+    width: 300px;
+    position:sticky;
+    background-color: rgb(226, 85, 97);
+    top:0;
+    padding: 5px;
+}
+div.static{
+    position:5px;
+    background-color: orangered;
+}
+</style>
+    </head>
+    <body>
+      <div id="box1">
+        <h1>Absolute </h1>
+      </div>  
+
+      <div id="box2">
+        <h1>Relavtive </h1>
+      </div>  
+      <P>
+        
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed)
+      </P>
+    <h1>fixed positioning</h1>
+    <p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</p>
+    <div class="fixed">
+        This div element has position: fixed;
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+
+<div class="sticky">I am sticky!</div>
+
+<div style="padding-bottom:2000px">
+
+<p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+
+<p>Scroll back up to remove the stickyness.</p>
+
+<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+
+</div>
+<h2>position: static;</h2>
+
+<p>An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:</p>
+
+<div class="static">
+
+This div element has position: static;
+
+</div>
+    </body>
+</html>
